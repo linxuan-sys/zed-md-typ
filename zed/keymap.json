@@ -1,0 +1,14 @@
+[
+  {
+    "context": "Editor && ext == md",
+    "bindings": {
+      "alt-m": "task::Markdown Preview"
+    }
+  },
+  {
+    "context": "Editor && ext == typ",
+    "bindings": {
+      "alt-t": "task::Typst Preview"
+    }
+  }
+]

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "Bundled tinymist binary is not present in this repository snapshot." >&2
+echo "Please place a Linux x86_64 tinymist binary at: $(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/tinymist" >&2
+exit 127

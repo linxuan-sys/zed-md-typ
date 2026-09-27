@@ -1,0 +1,23 @@
+{
+  "tasks": [
+    {
+      "label": "Markdown Preview",
+      "command": "python3",
+      "args": [
+        "~/.config/zed/md_preview.py",
+        "$ZED_FILE"
+      ],
+      "use_new_terminal": true,
+      "allow_concurrent_runs": false
+    },
+    {
+      "label": "Typst Preview",
+      "command": "~/.config/zed/typst_preview.sh",
+      "args": [
+        "$ZED_FILE"
+      ],
+      "use_new_terminal": true,
+      "allow_concurrent_runs": false
+    }
+  ]
+}

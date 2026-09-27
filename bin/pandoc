@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if command -v pandoc >/dev/null 2>&1; then
+  exec pandoc "$@"
+fi
+
+echo "Bundled pandoc binary is not present in this repository snapshot." >&2
+echo "Please place a Linux x86_64 pandoc binary at: $(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/pandoc" >&2
+exit 127
