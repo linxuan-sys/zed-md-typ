@@ -1,0 +1,26 @@
+[
+  {
+    "label": "Markdown Preview",
+    "command": "python3 \"$HOME/.config/zed/md_preview.py\" \"$ZED_FILE\"",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": true,
+    "reveal": "never",
+    "hide": "always"
+  },
+  {
+    "label": "HTML Preview",
+    "command": "python3 \"$HOME/.config/zed/html_preview.py\" \"$ZED_FILE\"",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": true,
+    "reveal": "never",
+    "hide": "always"
+  },
+  {
+    "label": "Typst Preview",
+    "command": "\"$HOME/.config/zed/vendor/tinymist\" preview --open \"$ZED_FILE\"",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": true,
+    "reveal": "never",
+    "hide": "always"
+  }
+]

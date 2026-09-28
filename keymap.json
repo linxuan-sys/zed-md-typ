@@ -1,0 +1,10 @@
+[
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-m": ["task::Spawn", { "task_name": "Markdown Preview" }],
+      "alt-h": ["task::Spawn", { "task_name": "HTML Preview" }],
+      "alt-t": ["task::Spawn", { "task_name": "Typst Preview" }]
+    }
+  }
+]

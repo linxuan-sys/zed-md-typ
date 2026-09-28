@@ -1,0 +1,27 @@
+[
+  {
+    "label": "C: 编译并调试当前文件 (GDB)",
+    "adapter": "GDB",
+    "request": "launch",
+    "program": "$ZED_DIRNAME/$ZED_STEM",
+    "cwd": "$ZED_DIRNAME",
+    "build": {
+      "command": "gcc",
+      "args": [
+        "-g",
+        "-O0",
+        "-Wall",
+        "$ZED_FILE",
+        "-o",
+        "$ZED_DIRNAME/$ZED_STEM"
+      ]
+    }
+  },
+  {
+    "label": "C: 调试当前目录已有可执行文件 (GDB)",
+    "adapter": "GDB",
+    "request": "launch",
+    "program": "$ZED_DIRNAME/$ZED_STEM",
+    "cwd": "$ZED_DIRNAME"
+  }
+]
